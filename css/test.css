@@ -3,11 +3,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    margin-top: 30px;
 }
 
 .quiz {
     margin: 0 auto;
-    width: 600px;
+    padding: 0 5%;
+    max-width: 600px;
+    margin-bottom: 10%;
 }
 
 .quiz-questions,
@@ -27,15 +30,24 @@ body {
     list-style: none;
 }
 
+.quiz-questions-item .quiz-questions-item__answers li {
+    margin-bottom: 10px;
+}
+
 .quiz-questions-item .quiz-questions-item__question,
 .quiz-results-item .quiz-results-item__question {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.btn-next {
-
+button {
+    outline: none;
+    border-radius: 0;
+    font-size: 1.1em;
+    padding: 7px 15px;
 }
+
+
 
 .quiz-results {
     display: none;

@@ -3,7 +3,9 @@
   --second-color: #005199;
   --light-main-color: #4284d3;
   --purple: rgb(70, 84, 246);
+  --dark-purple: #423ed8;
   --light-purple: #a8b1ff;
+  --text-color: #2e3856;;
   --gray: #282e3e;
   --soft-gray: #cccccc;
   --white: white;
@@ -19,6 +21,12 @@
   font-family: "Roboto", sans-serif;
 }
 /* resest styles end */
+
+/* body styles */
+body {
+  color: var(--text-color);
+}
+/* body styles end */
 
 /* navbar styles */
 .header {
@@ -93,6 +101,11 @@
   left: 0;
 }
 
+.intro-container img {
+  height: 45rem;
+  object-fit: cover;
+}
+
 .intro-container .content-container .content {
   max-width: 40rem;
 }
@@ -105,6 +118,31 @@
 
 .intro-container .content-container .content p {
   font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.intro-container .content-container .content a {
+  text-decoration: none;
+}
+
+.intro-container .content-container .content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  padding: 17px;
+  width: 15em;
+  height: 30px;
+  color: white;
+  background-color: var(--purple);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.intro-container .content-container .content .button:hover {
+  background-color: var(--dark-purple);
 }
 
 /* Intro container styles end */
@@ -122,7 +160,8 @@
 
 /* Card section styles */
 .card-section {
-  margin: 15rem 0;
+  margin: 13rem 0;
+
 }
 /* Card section styles end */
 
@@ -145,8 +184,10 @@
 }
 
 .content-section p {
-  margin-top: 1.9rem;
-  font-size: 1.5em;
+  margin-top: 1.8rem;
+  font-size: 1.3em;
+  color: rgb(60, 60, 60);
+  line-height: 1.4;
 }
 
 .content-section h2 {
@@ -159,6 +200,7 @@
 
 .image-section img {
   width: 100%;
+
   border-radius: 1.7rem;
 }
 /* Card styles end */
@@ -198,8 +240,13 @@
 
 .footer .footer-container .about:hover h2::after,
 .footer .footer-container .nav:hover h2::after,
-.footer .footer-container .contact:hover h2::after {
+.footer .footer-container .contact:hover h2::after,
+.footer .footer-container .mission:hover h2::after {
   width: 50%;
+}
+
+.footer .footer-container .about p {
+  line-height: 1.3;
 }
 
 .footer .footer-container .about .social-icons {
@@ -207,6 +254,10 @@
   display: flex;
   list-style: none;
   gap: 0.5rem;
+}
+
+.footer .footer-container .mission p {
+  line-height: 1.3;
 }
 
 .footer .footer-container .about .social-icons .social-icon i {

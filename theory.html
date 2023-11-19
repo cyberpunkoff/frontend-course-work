@@ -7,14 +7,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/fd9c503804.js" crossorigin="anonymous"></script>
+        <script src="js/index.js" defer></script>
         <link rel="stylesheet" href="css/theory.css" />
+        <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
         <main>
+            <header class="header">
+                <nav class="navbar">
+                    <div class="logo-container">
+                        <a href="/index.html"><img src="/img/icon-main.jpg" alt="sql mastery logo" /></a>
+                    </div>
+
+                    <div class="menu-container">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="/index.html">SQLMastery</a></li>
+                            <li class="menu-item"><a href="/theory.html">Теория</a></li>
+                            <li class="menu-item"><a href="/test.html">Тест</a></li>
+                            <li class="menu-item">
+                                <a href="/versions.html">Сравнение</a>
+                            </li>
+                            <li class="menu-item"><a href="/about.html">О нас</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+
             <section class="content">
                 <h1>Нереляционные СУБД</h1>
-                <h2>Основные реализации</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum in magnam corporis ipsum, quis quam voluptatem culpa aperiam, quia nostrum similique ut deserunt rem aut ea autem minus atque! Omnis necessitatibus quaerat sunt quae accusantium cumque ea earum consectetur, numquam veniam aperiam voluptatibus enim culpa harum? Ipsum, adipisci temporibus ipsa dolore deleniti optio rerum praesentium culpa ab commodi ipsam tempora obcaecati minus, earum, nesciunt dignissimos ducimus sed distinctio quas laborum! Doloribus odio assumenda quo iure sed, exercitationem tempora dignissimos pariatur aliquam blanditiis ullam, itaque aut eligendi atque delectus consequatur. Possimus dolor aliquam saepe a, esse quos laudantium architecto voluptatem modi?</p>
 
                 <h2>Нереляционные базы данных</h2>
                 <p>Нереляционные базы данных, также известные как NoSQL, представляют собой тип баз данных, который отличается от традиционных реляционных баз данных. В отличие от реляционных баз данных, где данные хранятся в виде таблиц с жесткой схемой, NoSQL базы данных позволяют гибко хранить и извлекать данные без строгой схемы. Термин "NoSQL" обозначает "не только SQL", что подчеркивает разнообразие моделей данных и подходов к хранению информации в таких базах данных.</p>
@@ -46,6 +73,60 @@
                 <h2>Преимущества нереляционных СУБД</h2>
                 <p>Нереляционные СУБД предоставляют гибкость в работе с данными, поскольку они не требуют строгой схемы. Главное преимущество заключается в способности эффективно обрабатывать данные различной структуры, а также в возможности масштабирования горизонтально для обработки больших объемов данных. Это особенно полезно в условиях изменяющихся требований и сценариев, где необходима высокая производительность и гибкость хранения данных.</p>
             </section>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="about">
+                        <h2>О разработчике</h2>
+                        <p>Ваш надежный партнер в мире NoSQL: создаем эффективные и инновационные решения для вашего успеха.</p>
+                        <ul class="social-icons">
+                            <li class="social-icon">
+                                <a href="/index.html"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li class="social-icon">
+                                <a href="/index.html"><i class="fa-brands fa-vk"></i></a>
+                            </li>
+                            <li class="social-icon">
+                                <a href="/index.html"><i class="fa-brands fa-telegram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav">
+                        <h2>Навигация</h2>
+
+                        <ul class="nav-menu">
+                            <li><a href="/index.html">SQLMastery</a></li>
+                            <li><a href="/theory.html">Теория</a></li>
+                            <li><a href="/test.html">Тест</a></li>
+                            <li>
+                                <a href="/versions.html">Сравнение</a>
+                            </li>
+                            <li><a href="/about.html">О нас</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mission">
+                        <h2>Наша миссия</h2>
+                        <p>Наша миссия - сделать изучение NoSQL доступным и захватывающим, предоставляя увлекательные уроки и практические задания для легкого освоения этой важной технологии</p>
+                    </div>
+
+                    <div class="contact">
+                        <h2>Контакты</h2>
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <a href="tel:=+79161234567"><i class="fa-solid fa-phone"></i><span>+7 (916) 723 98-55</span></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="/index.html"><i class="fa-solid fa-location-dot"></i><span>Москва, проспект Вернадского, 78</span></a>
+                            </li>
+                            <li class="contact-list-item">
+                                <a href="mailto:example@mail.com"><i class="fa-solid fa-envelope"></i><span>example@mail.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

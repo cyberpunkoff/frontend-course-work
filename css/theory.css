@@ -11,6 +11,12 @@
 }
 /* resest styles end */
 
+/* Header added styles */
+.header {
+    position: static!important;
+}
+/* header styles end */
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -42,6 +48,12 @@ body {
     font-size: 16px;
 }
 /* content styles end */
+
+/* Footer added styles */
+.footer {
+    margin-top: 50px!important;
+}
+/* footer styles end */
 
 @media screen and (max-width: 768px) {
     .content {

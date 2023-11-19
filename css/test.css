@@ -163,6 +163,12 @@ button:hover {
     padding-top: 70px;
 }
 
+/* Header added styles */
+.header {
+    position: absolute!important;
+}
+/* header styles end */
+
 @media screen and (max-width: 496px) {
     .quiz-container {
         width: 100%;

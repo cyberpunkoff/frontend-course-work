@@ -1,0 +1,107 @@
+:root {
+    --light-purple: #a8b1ff;
+    --text-color: #2e3856;
+}
+
+body {
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 100px; */
+}
+
+.login-form {
+    position: relative;
+    background-color: white;
+    display: flex;
+    width: 60%;
+    max-width: 350px;
+    padding: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-arrow-left {
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.login-form form button {
+    margin-top: 25px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    border-radius: 0;
+    background-color: var(--light-purple);
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.login-form form button:hover {
+    background-color: #8b97ff;
+}
+
+.login-form form input {
+    padding: 10px 20px;
+    font-size: 1.03em;
+}
+
+.login-form form .checkbox-label {
+    color: rgb(112, 112, 112);
+}
+
+.login-form form a {
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    transition: 0.3s ease;
+}
+
+.login-form form a:hover {
+    color: rgb(37, 37, 37);
+}
+
+.remember-and-reset {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form form input::placeholder {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 392px) {
+    .remember-and-reset {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
